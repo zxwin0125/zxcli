@@ -1,0 +1,38 @@
+{
+	"name": "zxcli",
+	"version": "0.1.0",
+	"description": "A scaffolding tool for my personal productivity.",
+	"keywords": [
+		"scaffolding",
+		"cli",
+		"typescript",
+		"jest",
+		"node",
+		"zxcli"
+	],
+	"homepage": "https://github.com/zxwin0125/zxcli#readme",
+	"bugs": {
+		"url": "https://github.com/zxwin0125/zxcli/issues"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/zxwin0125/zxcli.git"
+	},
+	"license": "Apache-2.0",
+	"author": "zxwin0125",
+	"main": "lib/index.js",
+	"types": "lib/index.d.ts",
+	"bin": "bin/zxcli",
+	"scripts": {
+		"compile": "tsc"
+	},
+	"dependencies": {
+		"commander": "^12.1.0"
+	},
+	"devDependencies": {
+		"ejs": "^3.1.10",
+		"prompts": "^2.4.2",
+		"ts-node": "^10.9.2",
+		"typescript": "^5.7.2"
+	}
+}

@@ -1,0 +1,11 @@
+{
+  "name": "<%= name %>",
+  "version": "<%= version %>",
+  "main": "<%= main %>",
+  "scripts": {
+    "test": "<%= scripts.test %>"
+  },
+  "author": "<%= author %>",
+  "license": "<%= license %>",
+  "description": "<%= description %>"
+}
