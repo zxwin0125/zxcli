@@ -20,9 +20,8 @@
 	},
 	"license": "Apache-2.0",
 	"author": "zxwin0125",
-	"main": "lib/index.js",
-	"types": "lib/index.d.ts",
-	"bin": "bin/zxcli",
+	"main": "index.js",
+	"bin": "bin/zxcli.js",
 	"dependencies": {
 		"commander": "^12.1.0"
 	},
