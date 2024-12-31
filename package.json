@@ -1,27 +1,27 @@
 {
-	"name": "zxcli",
+	"name": "zxct",
 	"version": "0.1.0",
 	"description": "A scaffolding tool for my personal productivity.",
 	"keywords": [
 		"scaffolding",
 		"cli",
-		"typescript",
-		"jest",
 		"node",
-		"zxcli"
+		"zxct"
 	],
-	"homepage": "https://github.com/zxwin0125/zxcli#readme",
+	"homepage": "https://github.com/zxwin0125/zxct#readme",
 	"bugs": {
-		"url": "https://github.com/zxwin0125/zxcli/issues"
+		"url": "https://github.com/zxwin0125/zxct/issues"
 	},
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/zxwin0125/zxcli.git"
+		"url": "git+https://github.com/zxwin0125/zxct.git"
 	},
 	"license": "Apache-2.0",
 	"author": "zxwin0125",
 	"main": "index.js",
-	"bin": "bin/zxcli.js",
+	"bin": {
+		"zxct": "bin/zxcli.js"
+	},
 	"dependencies": {
 		"commander": "^12.1.0"
 	},

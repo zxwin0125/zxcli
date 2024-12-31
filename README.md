@@ -1,13 +1,13 @@
 ## Installation
 
 ```bash
-$ npm install --save zxcli
+$ npm install --save zxct
 ```
 
 ## Usage
 
 ```bash
-zxcli node myNodeProject
+zxct node myNodeProject
 ```
 
 ## License
