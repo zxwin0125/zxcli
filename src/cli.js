@@ -1,6 +1,6 @@
-import { Command } from 'commander';
-import init from '.';
+const { Command } = require('commander');
 const { name, version, description } = require('../package.json'); // 包含描述信息
+const init = require('./init');
 
 const program = new Command(name)
 	.version(version, '-v, --version', 'output the current version')

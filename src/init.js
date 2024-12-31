@@ -1,7 +1,7 @@
-import nodeDefault from './node/nodeDefault';
+const nodeDefault = require('./node/nodeDefault');
 const prompts = require('prompts');
 
-export default async (): Promise<void> => {
+const init = async () => {
 	const projectTemplate = process.argv.slice(2)[0];
 	const projectName = process.argv.slice(2)[1];
 
@@ -26,3 +26,5 @@ export default async (): Promise<void> => {
 		}
 	}
 };
+
+module.exports = init;

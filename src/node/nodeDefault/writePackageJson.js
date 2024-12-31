@@ -1,9 +1,8 @@
-import fs from 'fs';
-import path from 'path';
-import { PackageJsonDefaultContent } from './interface';
+const fs = require('fs');
+const path = require('path');
 const ejs = require('ejs');
 
-const writePackageJson = (packageJsonData: PackageJsonDefaultContent) => {
+const writePackageJson = packageJsonData => {
 	const tmplDir = path.join(__dirname, 'templates/nodeDefault');
 	const destDir = process.cwd();
 
@@ -22,4 +21,4 @@ const writePackageJson = (packageJsonData: PackageJsonDefaultContent) => {
 	});
 };
 
-export default writePackageJson;
+module.exports = writePackageJson;

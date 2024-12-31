@@ -1,8 +1,6 @@
 const prompts = require('prompts');
 
-import { PromptsData } from './interface';
-
-const getPromptResponses = async (promptsData: PromptsData) => {
+const getPromptResponses = async promptsData => {
 	const questions = [
 		{
 			type: 'text',
@@ -57,4 +55,4 @@ const getPromptResponses = async (promptsData: PromptsData) => {
 	return await prompts(questions, { initial: promptsData });
 };
 
-export default getPromptResponses;
+module.exports = getPromptResponses;

@@ -1,11 +1,10 @@
-import path from 'path';
-import { PackageJsonDefaultContent, Responses } from './interface';
-import writePackageJson from './writePackageJson';
+const path = require('path');
+const writePackageJson = require('./writePackageJson');
 const prompts = require('prompts');
 
-const confirmAndWritePackageJson = async (responses: Responses) => {
+const confirmAndWritePackageJson = async responses => {
 	const packageJsonPath = path.join(__dirname, 'package.json');
-	const packageJsonContent: PackageJsonDefaultContent = {
+	const packageJsonContent = {
 		name: responses.packageName,
 		version: responses.version,
 		main: responses.entryFile,
@@ -42,4 +41,4 @@ ${JSON.stringify(packageJsonContent, null, 2)}
 	}
 };
 
-export default confirmAndWritePackageJson;
+module.exports = confirmAndWritePackageJson;
